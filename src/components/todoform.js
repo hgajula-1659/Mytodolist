@@ -29,13 +29,15 @@ if(todo.task.trim()){
             name="task"
             type="text"
             value={todo.task}
+            className='todo-input'
             onChange={handletodoChange}/>
             <input
              name="date"
             type="datetime-local"
+            className='todo-input date_style'
               onChange={handletodoChangedate}
             />
-            <button type="submit">Submit</button>
+            <button className='todo-button' type="submit">Add</button>
         </form>
     )
 }
